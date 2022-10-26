@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<style>
+
+  /* Set additional styling options for the columns*/
+  .column {
+  float: left;
+  width: 50%;
+  }
+
+  .row:after {
+  content: "";
+  display: table;
+  clear: both;
+  }
+
+  .row {
+  margin-top: 100px;
+  margin-bottom: 100px;
+  margin-right: 150px;
+  margin-left: 80px;
+  }
+
+  </style>
+
+<body>
+  <div class="row">
+    <div class="column">
+      <table class="table table-striped table-dark">
+      <thead>
+        <tr>
+        <th scope="col">#</th>
+        <th scope="col">Nombre</th>
+        <th scope="col">Canal</th>
+        <th scope="col">Temporadas</th>
+        </tr>
+        </thead>
+        <tbody id="series"></tbody>
+        </table>
+        </div>
+
+        <div class="column">
+        <div class="card mx-auto w-75" id="card"></div>
+        </div>
+      </div>
+        
+
+    <script type="module" src="./scripts/Serie.js" ></script>
+    <script type="module" src="./scripts/data.js" ></script>
+    <script type="module" src="./scripts/main.js"></script>
+
+
+    
+</body>
+</html>
+
